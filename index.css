@@ -1,16 +1,55 @@
 body {
   background-color: #0984e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
 }
 
 h1,
 li,
 .js-weather {
   color: white;
+  font-weight: bold;
+}
+
+.js-weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .form,
 .greetings {
   display: none;
+  margin: 20px 0;
+}
+
+input {
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+input::placeholder,
+.js-clock {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+input:focus {
+  outline: none;
 }
 
 .showing {
